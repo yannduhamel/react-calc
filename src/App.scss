@@ -1,0 +1,89 @@
+$first-theme-main-background: hsl(0, 0%, 90%);
+$first-theme-second-background: hsl(0, 5%, 81%);
+$first-theme-third-background: hsl(0, 0%, 93%);
+$first-theme-cyan: hsl(185, 42%, 37%);
+$first-theme-dark-cyan: hsl(185, 58%, 25%);
+$first-theme-orange: hsl(25, 98%, 40%);
+$first-theme-dark-orange: hsl(25, 99%, 27%);
+$first-theme-grayish-yellow: hsl(45, 7%, 89%);
+$first-theme-grayish-orange: hsl(35, 11%, 61%);
+$first-theme-dark-text: hsl(60, 1%, 21%);
+$first-theme-text: hsl(0, 0%, 100%);
+@mixin special-button-format {
+    width: 100%;
+    height: 4.1rem;
+    border: none;
+    border-radius: 7px;
+    font-size: 1.3rem;
+    color: $first-theme-text;
+}
+
+@font-face {
+    font-family: 'league-spartan';
+    src: url(./assets/LeagueSpartan.ttf);
+}
+
+* {
+    background-color: $first-theme-main-background;
+    font-family: 'league-spartan';
+    font-weight: 700;
+    color: $first-theme-dark-text;
+}
+
+.calculator {
+    width: 90vw;
+    margin: auto;
+}
+
+.calculatorHeader {
+    display: flex;
+    padding: 2rem 0;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.calculatorName {
+    font-size: 2rem;
+}
+
+.themeChangeTitle {
+    font-size: 0.8rem;
+}
+
+.calculatorResult {
+    height: 5.4rem;
+    border-radius: 10px;
+    margin-bottom: 1.5rem;
+    background-color: $first-theme-third-background;
+    z-index: 10;
+}
+
+.calculatorBody {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 1rem;
+    border-radius: 15px;
+    padding: 1.5rem;
+    background-color: $first-theme-second-background;
+}
+
+.deleteButton {
+    background-color: $first-theme-cyan;
+    @include special-button-format;
+    box-shadow: 0px 4px 0px 0px $first-theme-dark-cyan;
+}
+
+.resetButton {
+    grid-column: 1 / 3;
+    background-color: $first-theme-cyan;
+    @include special-button-format;
+    box-shadow: 0px 4px 0px 0px $first-theme-dark-cyan;
+}
+
+.equalButton {
+    grid-column: 3 / 5;
+    background-color: $first-theme-orange;
+    @include special-button-format;
+    box-shadow: 0px 4px 0px 0px $first-theme-dark-orange;
+}
