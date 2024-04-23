@@ -1,8 +1,8 @@
-# React + Vite
+# React Calc
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## Why?
+React Calc is a personal project that I'm doing on my free time to improve my skills in both React.js and Sass.
+The goal is to replicate the calculator shown in <a href="https://www.frontendmentor.io/challenges/calculator-app-9lteq5N29/hub">this</a> Frontend Mentor challenge.
 
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## How?
+Without a premium account on this website, I don't have access to the detailed Figma model. I'm doing it with the pictures I have in the assets section and the style-guide.md file.
